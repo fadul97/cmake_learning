@@ -2,5 +2,15 @@ cmake_minimum_required(VERSION 3.2)
 
 project(MyCMakeLearningApp CXX)
 
-# Added source file that contains function to executable target
-add_executable(myExe main.cpp adder.cpp)
+add_executable(myExe main.cpp)
+
+# Configured a library and linked it to my executable
+add_library(adder
+    adder.h
+    adder.cpp
+)
+
+target_link_libraries(myExe
+    PRIVATE
+        adder
+)

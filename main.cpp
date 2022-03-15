@@ -2,6 +2,6 @@
 #include "adder.h"
 
 int main(){
-    std::cout << add(5, 2) << std::endl;
+    std::cout << "Using function from linked library: " << add(5, 10) << std::endl;
     return 0;
 }
