@@ -8,7 +8,7 @@ project(MyCMakeLearningApp CXX)
 
 # Configured a library and linked it to my executable
 add_library(MyCMakeLearningApp
-    STATIC
+    SHARED
         src/adder.cpp
 )
 
